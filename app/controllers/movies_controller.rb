@@ -15,6 +15,8 @@ class MoviesController < ApplicationController
       movie.title = response_body['Title']
       movie.release_year = response_body['Year']
       movie.rating = response_body['Rated']
+      movie.poster = response_body['Poster']
+      movie
     end
   end
 end
